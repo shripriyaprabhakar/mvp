@@ -10,12 +10,3 @@ td, th {
 svg {
  height: 150px;
 }
-
-td:first-of-type, td:first-of-type > div {
-  height: 200px;
-  width: 250px;
-};
-
-.mainapp {
-  background: radial-gradient(#302b63, #24243e);
-}
