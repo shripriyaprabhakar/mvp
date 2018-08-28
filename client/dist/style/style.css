@@ -19,3 +19,26 @@ td:first-of-type, td:first-of-type > div {
 .mainapp {
   background: radial-gradient(#302b63, #24243e);
 }
+
+h1{ 
+    color:white;
+    font-size:72px;
+    text-align:center;
+    display:inline-block;
+    position:relative;
+    width:100%; /*Add this*/
+   }
+
+li {
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+  height: 200px;
+  width: 250px;
+  list-style-type: circle;
+}
+
+/*.list-group-mine .list-group-item:hover {
+  background-color: red;
+}*/
+

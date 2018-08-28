@@ -8,6 +8,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import reducers from './reducers';
 import App from './components/App.jsx';
+
+import ListActivities from './components/ListActivities.js';
 import PostsNew from './components/PostsNew.js';
 
 
@@ -18,10 +20,10 @@ ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <BrowserRouter>
       <div>
-      Weather-ly
+      <h1>Weather-ly</h1>
       <Switch>
         <Route path="/posts" component={PostsNew} />
-	    <Route path="" component={App} />     
+	      <Route path="" component={App} />     
       </Switch>
       </div>
     </BrowserRouter>

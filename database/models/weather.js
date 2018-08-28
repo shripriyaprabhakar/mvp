@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 const WeatherSchema = new mongoose.Schema({
-  count: Number,
+  weatherForNext5days: String,
+  weatherForNext28days: String,
   suggestions: String,
 });
 

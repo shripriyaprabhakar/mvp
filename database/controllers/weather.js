@@ -1,8 +1,8 @@
 const models = require('../models/weather.js');
 
-const findWeatherAndUpdateCount = (data, callback) => {
+const findWeatherAndSuggest = (callback) => {
 	// console.log('hi');
-    models.Rsvp.create(data, (err, result) => {
+    models.Weather.findOne({}, (err, result) => {
       if (err) {
       	console.log('data not here')
         callback(err)
@@ -15,5 +15,17 @@ const findWeatherAndUpdateCount = (data, callback) => {
 };
 
 module.exports = {
-	findWeatherAndUpdateCount,
+	findWeatherAndSuggest,
 };
+
+/*
+  get: (req, res) => {
+    models.Review.find({ room_id: Number(req.params.roomId) }, (err, reviews) => {
+      if (err) {
+        res.status(500).send(err);
+      } else {
+        res.status(200).send(reviews);
+      }
+    });
+  },
+*/

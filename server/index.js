@@ -6,9 +6,9 @@ const app = express();
 
 app.use(express.static(__dirname + '/../client/dist'));
 
-app.post('/people', (req, res) => {
+app.get('/posts', (req, res) => {
 	console.log('recieved post')
-  ctrl.findWeatherAndUpdateCount(req.body, (err, result) => {
+  ctrl.findWeatherAndSuggest( (err, result) => {
   	// console.log('hi')
     if (err) {
       res.send(err);
